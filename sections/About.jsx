@@ -17,11 +17,28 @@ const About = () => (
      <TypingText title="| About Somaiya Innovation and Impact Festival"
      textStyles="text-center"
      />
-     <motion.p>
-      
+     <motion.p
+     variants={fadeIn('up','twee', 0.2, 1)}
+     className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+     >
+      <span className="font-extrabold text-white">The Somaiya Innovation and Impact Festival</span>
+      &nbsp;promises to be a transformative experience, where
+creativity meets technology, and innovation meets social responsibility. By bringing together
+&nbsp; <span className="font-extrabold text-white">MakerMela</span>,&nbsp;
+<span className="font-extrabold text-white">Darwin</span>,
+  and &nbsp;
+  <span className="font-extrabold text-white">Nazariya</span>
+  , we aspire to ignite imaginations, spark meaningful
+conversations, and catalyze connections & actions that will shape a brighter future for all
      </motion.p>
+
+     <motion.img
+     variants={fadeIn('up', 'tween', 0.3, 1)}
+     src="/arrow-down.svg"
+     alt="arrow-down"
+     className="w-[18px] h-[28px] object-contain mt-[28px]"
+     />
     </motion.div>
-    About section
   </section>
 );
 
